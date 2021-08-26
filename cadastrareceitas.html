@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="foto1.ico" type="image/x-icon">
+    <title>Receitas Práticas</title>
+</head>
+
+<body>
+    <header id="detalhes">
+        <img src="foto1.ico" alt="Logo do site">
+        <h2>Para voltar para o início, clique em início.</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <hr>
+        </ul>
+    </nav>
+    <h1>Fomulário de cadastro de receitas</h1>
+    <label for="nome_da_receita">Digite o nome da sua receita: </label>
+    <input type="text" name="nome_da_receita" id="nome_da_receita" minlength="2"
+        placeholder="Digite o nome da receita"><br>
+    <label for="ingredientes">Digite os ingredientes: </label>
+    <input type="text" name="ingredientes" id="ingredientes" minlength="2" placeholder="Digite os ingredientes"><br>
+    <label for="modo_de_preparo">Digite modo de preparo: </label>
+    <input type="text" name="modo_de_preparo" id="modo_de_preparo" minlength="2"
+        placeholder="Digite o modo de preparo"><br>
+    <form>
+        <label for="tempo_de_preparo">Tempo de preparo da sua receita: </label>
+        <input id="tempo_de_preparo" type="time" name="tempo_de_preparo" step="2"><br>
+        <br><input type="submit" value="Cadastrar Receita"><br>
+        <br><input type="reset" value="Resetar Cadastro de Receita">
+        <form>
+            <h2>Tabela de Receitas Cadastradas</h2>
+            <table border="1">
+                <tr>
+                    <td>Nome das Receitas</td>
+                    <td>Tempo de Preparo</td>
+                    <td>Editar/Apagar</td>
+                </tr>
+                <tr>
+                    <td>Brigadeiro</td>
+                    <td>35 minutos</td>
+                    <td><a href="#">Editar/Apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Sobremesa cremosa com biscoito de maizena</td>
+                    <td>50 minutos</td>
+                    <td><a href="#">Editar/Apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Churros de panela</td>
+                    <td>1 hora</td>
+                    <td><a href="#">Editar/Apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Bolinha de queijo</td>
+                    <td>1 hora </td>
+                    <td><a href="#">Editar/Apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Batatas fritas</td>
+                    <td>1 hora</td>
+                    <td><a href="#">Editar/Apagar</a></td>
+                </tr>
+            </table>
+            <footer>
+                <li>Desenvolvido por <a href="autor.html">Ana Riquele</a></li>
+            </footer>
+</body>
+
+</html>
