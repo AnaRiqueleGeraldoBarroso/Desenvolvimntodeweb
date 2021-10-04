@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="foto1.ico" type="image/x-icon">
     <title>Receitas Práticas</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 
 <body>
@@ -21,26 +22,26 @@
         </ul>
     </nav>
     <h1>Fomulário de cadastro de receitas</h1>
-    <label for="nome_da_receita">Digite o nome da sua receita: </label>
-    <input type="text" name="nome_da_receita" id="nome_da_receita" minlength="2"
-        placeholder="Digite o nome da receita"><br>
-    <label for="ingredientes">Digite os ingredientes: </label>
-    <input type="text" name="ingredientes" id="ingredientes" minlength="2" placeholder="Digite os ingredientes"><br>
-    <label for="modo_de_preparo">Digite modo de preparo: </label>
-    <input type="text" name="modo_de_preparo" id="modo_de_preparo" minlength="2"
-        placeholder="Digite o modo de preparo"><br>
     <form>
+    				<label for="nome_da_receita">Digite o nome da sua receita: </label>
+    				<input type="text" name="nome_da_receita" id="nome_da_receita" minlength="2"
+        placeholder="Digite o nome da receita"><br>
+    				<label for="ingredientes">Digite os ingredientes: </label>
+    				<input type="text" name="ingredientes" id="ingredientes" minlength="2" placeholder="Digite os ingredientes"><br>
+    				<label for="modo_de_preparo">Digite modo de preparo: </label>
+    				<input type="text" name="modo_de_preparo" id="modo_de_preparo" minlength="2"
+        placeholder="Digite o modo de preparo"><br>
         <label for="tempo_de_preparo">Tempo de preparo da sua receita: </label>
         <input id="tempo_de_preparo" type="time" name="tempo_de_preparo" step="2"><br>
         <br><input type="submit" value="Cadastrar Receita"><br>
         <br><input type="reset" value="Resetar Cadastro de Receita">
-        <form>
+        </form>
             <h2>Tabela de Receitas Cadastradas</h2>
             <table border="1">
                 <tr>
-                    <td>Nome das Receitas</td>
-                    <td>Tempo de Preparo</td>
-                    <td>Editar/Apagar</td>
+                    <th>Nome das Receitas</th>
+                    <th>Tempo de Preparo</th>
+                    <th>Editar/Apagar</th>
                 </tr>
                 <tr>
                     <td>Brigadeiro</td>
