@@ -55,10 +55,10 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(even){
-				background-color: #f2f2f2;
+.escolhida { 
+								background-color: #dca2f2;
 }
-
+								
 th {
   background-color: #8c03fc;
   color: white;
