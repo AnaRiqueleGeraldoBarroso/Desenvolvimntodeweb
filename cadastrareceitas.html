@@ -8,6 +8,12 @@
     <link rel="shortcut icon" href="foto1.ico" type="image/x-icon">
     <title>Receitas Práticas</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="cadastro.js"></script>
+    			
+				<style> 
+							 .escolhida { 
+								background-color: #dca2f2;} 
+				</style>
 </head>
 
 <body>
@@ -21,57 +27,35 @@
             <hr>
         </ul>
     </nav>
-    <h1>Fomulário de cadastro de receitas</h1>
-    <form>
-    				<label for="nome_da_receita">Digite o nome da sua receita: </label>
-    				<input type="text" name="nome_da_receita" id="nome_da_receita" minlength="2"
-        placeholder="Digite o nome da receita"><br>
-    				<label for="ingredientes">Digite os ingredientes: </label>
-    				<input type="text" name="ingredientes" id="ingredientes" minlength="2" placeholder="Digite os ingredientes"><br>
-    				<label for="modo_de_preparo">Digite modo de preparo: </label>
-    				<input type="text" name="modo_de_preparo" id="modo_de_preparo" minlength="2"
-        placeholder="Digite o modo de preparo"><br>
-        <label for="tempo_de_preparo">Tempo de preparo da sua receita: </label>
-        <input id="tempo_de_preparo" type="time" name="tempo_de_preparo" step="2"><br>
-        <br><input type="submit" value="Cadastrar Receita"><br>
-        <br><input type="reset" value="Resetar Cadastro de Receita">
-        </form>
-            <h2>Tabela de Receitas Cadastradas</h2>
-            <table border="1">
-                <tr>
-                    <th>Nome das Receitas</th>
-                    <th>Tempo de Preparo</th>
-                    <th>Editar/Apagar</th>
-                </tr>
-                <tr>
-                    <td>Brigadeiro</td>
-                    <td>35 minutos</td>
-                    <td><a href="#">Editar/Apagar</a></td>
-                </tr>
-                <tr>
-                    <td>Sobremesa cremosa com biscoito de maizena</td>
-                    <td>50 minutos</td>
-                    <td><a href="#">Editar/Apagar</a></td>
-                </tr>
-                <tr>
-                    <td>Churros de panela</td>
-                    <td>1 hora</td>
-                    <td><a href="#">Editar/Apagar</a></td>
-                </tr>
-                <tr>
-                    <td>Bolinha de queijo</td>
-                    <td>1 hora </td>
-                    <td><a href="#">Editar/Apagar</a></td>
-                </tr>
-                <tr>
-                    <td>Batatas fritas</td>
-                    <td>1 hora</td>
-                    <td><a href="#">Editar/Apagar</a></td>
-                </tr>
-            </table>
-            <footer>
-                <li>Desenvolvido por <a href="autor.html">Ana Riquele</a></li>
-            </footer>
+    <h1>Formulário de Cadastro de Receitas</h1> 
+				<button onclick="monitora_menu();">Mostrar Menu</button> 
+				<form onsubmit="event.preventDefault(); receber_formulario(cadastro_receitas);" > 
+								<input type="hidden" id="id"> 
+								<br><label for="nome">Nome</label> 
+								<br><input type="text" id="nome"> 
+								<br><label for="ingrediente">Ingredientes </label> 
+								<br><input type="text" id="ingrediente"> 							
+								<br><label for="preparo">Preparo</label> 
+								<br><input type="text" id="preparo">
+								<br><label for="tempo">Tempo</label>
+								<br><input type="time" id="tempo"><br>
+								<br><button>Cadastrar</button> 
+			</form> 
+			<br><button onclick="monitora_lista(cadastro_receitas);">Listar</button><br>
+			<br><button onclick="location.href=location.href">Atualizar</button><br>
+			<br><table> 
+							<thead> 
+											<tr> 
+															<th>ID</th> 
+															<th>Nome</th> 															<th>Ingredientes</th> 
+															<th>Preparo</th>
+															<th>Tempo</th>
+															<th>Açoes</th> 
+											</tr> 
+							</thead> 
+							<tbody> 
+											
+							</tbody> 
+				</table>
 </body>
-
 </html>
